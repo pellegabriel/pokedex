@@ -18,8 +18,8 @@ body{
 }
 .left-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,0.5fr));
-    grid-gap:2rem;
+    grid-template-columns: repeat(auto-fit,minmax(300px,0.5fr));
+    grid-gap:1rem;
 }
 .card{
     width: 300px;
