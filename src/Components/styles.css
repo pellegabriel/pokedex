@@ -5,8 +5,13 @@
     font-family: 'Roboto', sans-serif;
 }
 body{
-    background-color: #FCEEC8;
+    background-color: rgba(255,0,0,1);
 }
+
+h1{
+    padding: 20px;
+}
+
 .container{
     width: 90%;
     margin: auto;
@@ -20,10 +25,12 @@ body{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,0.5fr));
     grid-gap:1rem;
+    width: 70%;
+    padding-top: 100px;
 }
 .card{
     width: 300px;
-    background-color:#9EDEF9;
+    background-color:#efe41f;
     border-radius: 1rem;
     box-shadow: 0 5px 5px rgba(0,0,0,0.5);
     padding: 0 1.5rem;
@@ -32,13 +39,29 @@ body{
     justify-content: space-between;
     box-sizing: border-box;
 }
+.card img {
+        background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 9%, rgba(0,0,0,0) 45%);
+}
+.card:hover {
+    background-color: #ff0000;
+    color: wheat;
+}
 .right-content{
-    width: 50%;
+    width: 40%;
     text-align: center;
-    color: black;
+    color: rgb(255, 255, 255);
     position: fixed;
-    top:100px;
-    right: 10px;
+    top:130px;
+    right: 30px;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,0) 28%, rgba(162,5,5,1) 84%);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    
 }
 .right-content img{
     margin: 1.5rem;
@@ -58,12 +81,16 @@ body{
     margin-top: 1rem;
 }
 .abilities .group{
-    background-color: #b74555;
+    background-color: #470cc6;
     color: white;
     padding: 0.5rem;
     font-size: 12px;
     border-radius: 8px;
     margin-left: 1rem;
+}
+.abilities .group:hover{
+    color: #000000;
+    background-color: white;
 }
 .base-stat{
     margin-top: 2rem;
@@ -80,6 +107,21 @@ body{
     font-size: 17px;
     font-weight: bold;
     color: white;
-    background-color: #b74555;
+    background-color: #000000;
     border-radius: 8px;
+}
+
+.pokeheader {
+    background: rgb(0,0,0);
+background: linear-gradient(100deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 17%, rgba(255,0,0,1) 100%);
+    color: aliceblue;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+}
+.imgpoke{
+    width: 50px;
+    height: 50px;
+    padding: 1rem;
 }
