@@ -125,3 +125,9 @@ background: linear-gradient(100deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 17%, rgba(25
     height: 50px;
     padding: 1rem;
 }
+@media screen and (max-width: 600px){
+    .contenedor{
+      height: 100%;
+        width: 100%;;
+    }}
+  
